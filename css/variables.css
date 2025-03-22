@@ -1,0 +1,11 @@
+:root {
+  /* Color - Background Color */
+  --primary-color: #f53d2d;
+  /* *** Light */
+  --primary-color-light: #fff;
+  /* *** Dark */
+  --primary-color-dark: #222;
+
+  /* Linear Color */
+  --primary-linear-color: -180deg, #f53d2d, #f63;
+}
