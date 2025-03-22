@@ -1,3 +1,136 @@
 @import url(reset.css);
 @import url(variables.css);
 @import url(public.css);
+
+/* Header */
+header#header {
+  background: linear-gradient(var(--primary-linear-color));
+  font-size: 1.2rem;
+}
+
+/* Header Navbar */
+
+.header__navbar {
+  color: var(--primary-color-light);
+}
+
+.header__navbar__item,
+.header__navbar__link {
+  display: inline-block;
+}
+
+.header__navbar__link {
+  position: relative;
+  color: inherit;
+  font-weight: normal;
+  padding: 6px 12px;
+}
+.header__navbar__item:not(:first-child) > .header__navbar__link::after {
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+
+  width: 1px;
+  height: 50%;
+  background-color: var(--primary-color-light);
+  opacity: 0.8;
+}
+/* End Header Navbar */
+
+/* Header Main */
+.header__main {
+  padding: 16px 0 10px 0;
+  width: 100%;
+}
+/* Header Main Search */
+.header__main__search {
+  width: 100%;
+  padding-inline: 20px;
+}
+/* Header Main Search Bar */
+.header__main__search__bar {
+  display: flex;
+  align-items: stretch;
+  padding: 3px;
+  background-color: var(--primary-color-light);
+}
+
+.header__main__search__bar > input {
+  flex-grow: 1;
+  padding: 6px 4px;
+  border: none;
+}
+
+.header__main__search__bar > button {
+  width: 60px;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--primary-color-light);
+}
+/* End Header Main Search Bar */
+/* Header Main Search Suggest */
+.header__main__search__suggest {
+  width: 100%;
+  padding-top: 4px;
+  color: var(--primary-color-light);
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.header__main__search__suggest__item {
+  min-width: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header__main__search__suggest__item__link {
+  width: 100%;
+  padding: 6px 0;
+  color: inherit;
+}
+
+.header__main__search__suggest__item,
+.header__main__search__suggest__link {
+  display: inline-block;
+}
+/* End Header Main Search Suggest */
+/* End Header Main Search */
+/* Header Main Cart */
+.header__main__cart__link {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 16px;
+  position: relative;
+}
+
+.header__main__cart__link > .fa-cart-shopping {
+  width: 26px;
+  height: 26px;
+  color: var(--primary-color-light);
+}
+
+.header__main__cart__amount {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background-color: var(--primary-color-light);
+  color: var(--primary-color);
+  padding: 0 8px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* End Header Main Cart */
+/* End Header Main */
+/* End Header */
