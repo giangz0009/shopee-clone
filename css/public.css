@@ -23,6 +23,10 @@
   grid-template-columns: auto 1fr auto;
 }
 
+.grid-container-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .empty-item {
   content: " ";
   width: 100%;
